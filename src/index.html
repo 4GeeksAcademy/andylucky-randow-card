@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card</title>
 
     <!-- Fontawesome is our recomended library for icons -->
     <link
@@ -16,18 +16,18 @@
   </head>
   <body>
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+   
+    <div class="container card d-flex justify-content-center mt-3">
+      <div class="card-body d-flex justify-content-between flex-column">
+        <p class="card-text randomTop">Some quick example text </p>
+        <p class="card-text randomMiddle text-center">0</p>
+        <p class="card-text randomBottom rotate-90  d-flex justify-content-start">Some quick example text </p>
+   
       </div>
+      <a href="#" id="genCarta" class="btn btn-primary mb-3">Generar carta</a>
     </div>
+    
+
 
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>

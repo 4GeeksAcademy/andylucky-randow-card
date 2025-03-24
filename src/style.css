@@ -3,3 +3,16 @@
 body{
     background: white;
 }
+
+.card{
+    width: 350px;
+    height: 530px;
+    border-radius: 8px;
+}
+.rotate-90 {
+    transform: rotate(180deg);
+  }
+#genCarta:hover{
+
+        cursor: pointer;
+}
