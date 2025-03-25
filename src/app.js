@@ -10,14 +10,14 @@ import "./assets/img/4geeks.ico";
 const simbolos= [ "♦", "♥", "♠", "♣"];
 let colorCarta = "black";
 const elBoton = document.querySelector("#genCarta");
-
+let randomSimbolos = 0;
 
 
 //funciones
 
 //EXTRAE SIMBOLOS
 const generSimbolo = (simbolos) => {
-  let randomSimbolos = Math.floor(Math.random()*simbolos.length);
+  randomSimbolos = Math.floor(Math.random()*simbolos.length);
   return simbolos[randomSimbolos];
 }
 
@@ -30,9 +30,8 @@ const genNumAleatorio = () => {
 
 //GENERA COLOR CARTA
 const gentColorCarta = () => {
-  let randomSimbolos = Math.floor(Math.random()*simbolos.length);
   debugger
-  colorCarta =randomSimbolos === 0 || randomSimbolos === 1? "black" : "red";
+  colorCarta =simbolos[randomSimbolos] === "♦" || simbolos[randomSimbolos]  === "♥"? "red" : "black";
   return colorCarta;
 }
 
